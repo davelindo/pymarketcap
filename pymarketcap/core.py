@@ -204,6 +204,8 @@ class Pymarketcap(object):
                     data[key] = value_types[key](value)
                 except TypeError as e:
                     data[key] = None
+                except Exception():
+                    continue
             return data
 
 
