@@ -195,7 +195,8 @@ class Pymarketcap(object):
                            'symbol': str, 
                            '24h_volume_%s' % convert.lower(): self.parse_float, 
                            '24h_volume_usd': self.parse_float, 
-                           'total_supply': self.parse_float, 
+                           'total_supply': self.parse_float,
+                           'max_supply': self.parse_float, 
                            'id': str}
             data = {}
             for key, value in raw_data.items():
